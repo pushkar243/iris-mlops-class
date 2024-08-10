@@ -49,7 +49,7 @@ jobs:
       run: docker tag iris:latest pushkar243/iris:latest
 
     - name: Push Docker image to Docker Hub
-      run: docker push amitkora/iris:latest
+      run: docker push pushkar243/iris:latest
 
     - name: Test Docker container locally
       run: |
