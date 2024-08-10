@@ -29,8 +29,8 @@ jobs:
       run: |
         docker build -t iris .
 
-    - name: Check secrets
-      run: echo "Username length: ${#${{ secrets.DOCKER_HUB_USERNAME }}}"
+    #- name: Check secrets
+    #  run: echo "Username length: ${#${{ secrets.DOCKER_HUB_USERNAME }}}"
 
     - name: Check Docker version
       run: docker --version
